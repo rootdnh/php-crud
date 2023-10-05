@@ -1,7 +1,7 @@
 <?php
 require_once 'DbConnection.php';
 
-$con = (new DataBaseConnection("root", "your_pass", "localhost", "blog"))->connection();
+$con = (new DataBaseConnection("root", "#210899Hotz", "localhost", "blog"))->connection();
 $selectAll = $con->prepare("SELECT * FROM clientes");
 
 
@@ -10,7 +10,7 @@ function renderTable($selectAll)
   if ($selectAll->execute()) {
     $result = $selectAll->fetchAll(PDO::FETCH_ASSOC);
 
-    foreach ($result as $item) {
+    foreach ($result as $item)  {
       echo "
           <tr>
             <td>" . $item['name'] . "</td>
@@ -56,6 +56,9 @@ function renderTable($selectAll)
       ?>
     </tbody>
   </table>
+
+  <button style="margin-top: 10px" onclick="javascript:window.location.href = 'views/createUser.php'">Criar usuário</button>
+
 </body>
 
 </html>
