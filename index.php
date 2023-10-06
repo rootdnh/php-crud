@@ -1,7 +1,6 @@
 <?php
 require_once 'DbConnection.php';
 
-$con = (new DataBaseConnection("root", "#210899Hotz", "localhost", "blog"))->connection();
 $selectAll = $con->prepare("SELECT * FROM clientes");
 
 
