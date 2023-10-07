@@ -51,7 +51,7 @@
     ?>
   </main>
 
-  <button style="margin-top: 30px" onclick="javascript:window.location.href = '/'">voltar</button>
+  <button style="margin-top: 30px btn" onclick="javascript:window.location.href = '/'">voltar</button>
 </body>
 
 </html>

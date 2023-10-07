@@ -1,0 +1,15 @@
+{
+    "name": "rootdnh/crud-simple",
+    "autoload": {
+        "psr-4": {
+            "Rootdnh\\CrudSimple\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rootdnh",
+            "email": "rootdnh@gmail.com"
+        }
+    ],
+    "require": {}
+}
