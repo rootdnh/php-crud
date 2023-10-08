@@ -10,6 +10,7 @@
 <body>
   <?php
   require_once "../DbConnection.php";
+  
   $message = "";
 
   try {

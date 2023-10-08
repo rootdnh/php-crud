@@ -1,4 +1,9 @@
 <?php
+
+namespace App\db;
+use \PDO;
+use \PDOException;
+
 class DatabaseConnection
 {
   private static $db_connection;

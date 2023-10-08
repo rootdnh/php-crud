@@ -1,5 +1,5 @@
 <?php
-require_once 'src/DbConnection.php';
+require_once 'DbConnection.php';
 
 $selectAll = $con->prepare("SELECT * FROM clientes");
 
@@ -21,14 +21,9 @@ function renderTable($selectAll)
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <title>Simple Crud</title>
+  <?php 
+    include __DIR__.'/includes/header.php';
+  ?>
   <style>
     table {
       border-collapse: collapse;
@@ -55,10 +50,8 @@ function renderTable($selectAll)
       ?>
     </tbody>
   </table>
+  <button style="margin-top: 10px" class="btn btn-primary" onclick="javascript:window.location.href = 'views/pages/createUser.php'">Criar usuário</button>
 
-  <button style="margin-top: 10px" class="btn btn-primary" onclick="javascript:window.location.href = 'src/views/createUser.php'">Criar usuário</button>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
-
-</html>
+  <?php 
+    include __DIR__.'/includes/footer.php';
+  ?>
