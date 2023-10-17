@@ -9,8 +9,7 @@
 
 <body>
   <?php
-  require_once "../DbConnection.php";
-  
+  require_once __DIR__."/../../config/db/DbConnection.php";
   $message = "";
 
   try {

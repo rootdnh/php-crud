@@ -11,7 +11,7 @@ class DatabaseConnection
   private function __construct(){
     $db_driver = 'mysql';
     $user = "root";
-    $pass = "#pass";
+    $pass = "#210899Hotz";
     $host = "localhost";
     $db_name = "blog";
 
